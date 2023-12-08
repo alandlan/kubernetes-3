@@ -10,6 +10,8 @@ import { Clinica } from './clinicas/clinicaEntity.js'
 import { Consulta } from './consultas/consultaEntity.js'
 dotenv.config({ path: '.env' })
 
+console.log(process.env.DB_USER)
+
 export const AppDataSource = new DataSource({
   type: 'mysql',
   host: process.env.DB_HOST,
