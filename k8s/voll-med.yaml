@@ -39,3 +39,9 @@ spec:
             secretKeyRef:
               name: senhas           # The ConfigMap this value comes from.
               key: DB_PASSWORD # The key to fetch.
+        livenessProbe:
+          httpGet:
+            path: /paciente
+            port: 3000
+          initialDelaySeconds: 60
+          periodSeconds: 10
