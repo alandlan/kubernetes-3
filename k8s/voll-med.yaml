@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: vollmed-api
-        image: leonardosartorello/vollmed:v8
+        image: alandlan/kubernetes_alura:latest
         ports:
         - containerPort: 3000
         env:
